@@ -3,6 +3,9 @@
 public without sharing class SendEmailToUser {
     public class VerificationException extends Exception {}
 
+    //This is the invocable method , its being invoked by agentforce agent when user enters email address,
+    // to verify their username or email through otp
+
     @InvocableMethod(
         Label='Send Email With Verification Code'
         Description='Finds the user by email, or username  and emails them a one-time verification code.'
